@@ -25,29 +25,5 @@ dbt enables analytics engineers to transform raw data in the warehouse using SQL
 
 ---
 
-## 🧾 YAML Configurations
 
-### `dbt_project.yml`
 
-```yaml
-name: my_dbt_project
-version: '1.0'
-profile: my_profile
-
-models:
-  my_dbt_project:
-    staging:
-      materialized: view
-    marts:
-      materialized: table
-
-##sources.yml
-version: 2
-sources:
-  - name: stripe
-    schema: stripe_data
-    tables:
-      - name: payments
-        columns:
-          - name: id
-            tests: [unique, not_null]
