@@ -10,3 +10,4 @@ dbt docs serve            # Serve docs locally
 dbt run-operation <macro> # Run macros
 dbt show                  # Preview SQL
 dbt source freshness      # Check source freshness
+dbt deps
