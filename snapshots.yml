@@ -1,0 +1,6 @@
+snapshots:
+  my_dbt_project:
+    customers_snapshot:
+      strategy: timestamp
+      unique_key: customer_id
+      updated_at: updated_at
